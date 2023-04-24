@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #app .small{
+        height: 200px;
+        position: relative;
+    }
+    #app .big{
+        height: 400px;
+        display: none;
+        position: absolute;
+        top: 150px;
+        left: 100px;
+    }
+    #app .small:hover+.big{
+        height: 400px;
+        display: block;
+    }
+</style>
+<body>
+    <div id="app">
+        <img class="small" src="./img/qjt.jpg" >
+        <img class="big" src="./img/qjt.jpg" >
+        <button @click="login">登陆</button>
+        asd
+    </div>
+    <script src="./js/vue.js"></script>
+    <script>
+        var vm = new Vue({
+            el:"#app",
+            data:{
+                
+            }
+        })
+    </script>
+</body>
+</html>
